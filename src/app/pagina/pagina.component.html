@@ -6,6 +6,8 @@
   // TODO: criar um método POST no api.service que envie o texto do input e exiba a resposta na página
 -->
 
-<h1>Título da página</h1>
-
-{{ apiGreeting }}
+<Header></Header>
+<div class="row">
+  <Sidebar></Sidebar>
+  <Content [apiGreeting]="apiGreeting" [date]="date" [(value)]="text"></Content>
+</div>

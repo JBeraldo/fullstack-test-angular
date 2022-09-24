@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+      "target": "http://novakio.nv",
+      "secure": false,
+      "logLevel": "debug"
+  }
+}

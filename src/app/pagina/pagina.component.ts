@@ -12,6 +12,8 @@ import { ApiService } from '../services/api.service';
 export class PaginaComponent implements OnInit {
 
   public apiGreeting = '';
+  public date = '';
+  public text = ''
 
   constructor(
     private apiService: ApiService
@@ -28,6 +30,17 @@ export class PaginaComponent implements OnInit {
         this.apiGreeting = response.mensagem;
       }
     });
+
+    this.apiService.getDate().pipe(
+      catchError((err) =>{
+        this.date = 'Erro ao recuperar data'
+        return [];
+      })
+    ).subscribe((response)=>{
+      if(response){
+        this.date = response.date
+      }
+    })
   }
 
 }
