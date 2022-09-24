@@ -1,5 +1,9 @@
 # Fullstack Test Angular
 
+## Aviso
+
+!!! foi configurado o CORS então favor mudar o target em proxy.conf.json em src/ assim como o enviroment para funcionamento correto da API
+
 ## Descrição
 
 Projeto em Angular (v11.0.3) gerado com o [Angular CLI](https://github.com/angular/angular-cli) v11.0.3.
